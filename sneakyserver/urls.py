@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from sneaky_api.views import get_shoes
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', get_shoes),
 ]
